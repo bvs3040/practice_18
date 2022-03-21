@@ -159,10 +159,21 @@ h2{
     letter-spacing: -0.07em; 
 }
 
-h3{
+h3{ 
+    font-size: 20px;
+    line-height: 28px;
+}
+
+h4{
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #363636;
+    margin: 0;
     font-size: 18px;
     line-height: 25px;
 }
+
 
 .projects{
     background-color: #131313;
@@ -252,15 +263,15 @@ h3{
 
 .online_control{
     margin-top: -325px;
+    margin-bottom: 100px;
 }
 
 .center{
     text-align: center;
 }
 
-.online_control__icon_camera{
-    margin-top: 14px;
-    margin-bottom: 26px;
+.titleIcon{
+    margin: 14px auto 26px;
 }
 
 .video{
@@ -337,3 +348,70 @@ hr {
     padding-bottom: 50px;
 }
 
+.typesOfRepair_img{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 200px;
+}
+
+.typesOfRepair_list{
+    text-align: left;
+    margin: 292px auto 0;
+    background-color: #FFFFFF;
+    max-width: 330px;
+    padding-top: 21px;
+    padding-left: 31px;
+    padding-bottom: 49px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.typesOfRepair_img__item{
+    width: 392px;
+    background-repeat: no-repeat;
+}
+
+.typesOfRepair_img__item1{
+    background-image: url("/images/image_4.1.jpg");
+}
+
+.typesOfRepair_img__item2{
+    background-image: url("/images/image_4.2.jpg");
+}
+
+.typesOfRepair_img__item3{
+    background-image: url("/images/image_4.3.jpg");
+}    
+   
+
+.typesOfRepair_list ul{
+    margin-left: -23px;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+    margin-top: 9px;
+}
+
+.typesOfRepair_price{
+    background-color: #E3B873;
+    font-family: 'Yeseva One';
+    color:#FFFFFF;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    width: 228px;
+    height: 54px;
+    display: block;
+    padding-top: 14px;
+    margin-left: -34px;
+    margin-bottom: -76px;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    text-align: center;
+}
+
+.typesOfRepair{
+    padding-top: 39px;
+}
+
+.typesOfRepair__icon_repair{
+    margin: 12px auto 26px;
+}
