@@ -415,12 +415,14 @@ hr {
     background-image: url(/images/image_5.1.jpg);
     background-repeat: no-repeat;
     padding-top: 105px;
+    padding-bottom: 210px;
 }
 
 .communicationText{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-height: 509px;
 }
 
 .communicationText__item{
@@ -458,9 +460,7 @@ hr {
     background-color: #131313;
     padding: 27px 49px 27px ;
     display: flex;
-    flex-direction: column;
-   
-    
+    flex-direction: column;    
 }
 
 .communicationContacts_label{
@@ -515,3 +515,74 @@ hr {
 .communicationContacts-checkbox{
     margin-bottom: 38px;
 }
+
+.piggyBank{
+    display: flex;
+    justify-content: end;
+    margin-top: 29px;
+    margin-right: 144px;    
+}
+
+.piggyBank_text{
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    max-width: 245px;
+}
+
+.decortion{
+    background-image: url(/images/image_6.png);
+
+}
+
+.decortion__fix-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.decorationMenu{
+    padding-top: 135px;
+    
+}
+
+.decorationMenu ul{
+    margin-top: 38px;
+    padding-left: 0;
+}
+
+.decorationMenu ul li{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+    list-style: none;
+    margin-bottom: 11px;
+}
+
+.decorationMenu ul li:hover{
+    text-decoration: underline;
+    color: #E3B873;
+}
+  
+.decorationImages{
+    display: flex;
+    justify-content: space-between;
+    max-width: 751px;
+}
+
+.decorationImages_column1{
+    margin-top: -40px; 
+    max-width: 354px; 
+    margin-bottom: -47px;  
+    margin-right: 47px;
+}
+
+.decorationImages_column2{
+    margin-top: -113px;  
+    max-width: 354px; 
+}
+
+.decorationImages__image{
+    margin-bottom: 33px;
+}
+   
