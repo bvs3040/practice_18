@@ -531,8 +531,9 @@ hr {
     max-width: 245px;
 }
 
-.decortion{
+.decoration{
     background-image: url(/images/image_6.png);
+    max-height: 864px;
 
 }
 
@@ -580,9 +581,97 @@ hr {
 .decorationImages_column2{
     margin-top: -113px;  
     max-width: 354px; 
+    max-height: 937px;
 }
 
 .decorationImages__image{
-    margin-bottom: 33px;
+    margin-bottom: 33px;    
 }
-   
+
+.reviews{
+    padding-top: 107px;
+    padding-bottom: 200px;
+}
+
+.clients{
+    display: flex;
+    justify-content: space-between;
+}
+
+.underTitle{
+    max-width: 380px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+    margin-top: -12px;
+    margin-bottom: 40px;
+}
+
+.clientsCard{
+    max-width: 376px;
+    height: 428px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    padding: 26px 33px 0px 20px;
+}
+
+.clientsCard_name{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.clientsPhotoFrame{
+    min-width: 76px;
+    min-height: 76px;
+    border-radius: 50%;   
+}
+
+.clientsPhoto1{
+    background-image: url(/images/image_7.1.png);   
+}
+
+.clientsPhoto2{
+    background-image: url(/images/image_7.2.png);   
+}
+
+.clientsPhoto3{
+    background-image: url(/images/image_7.3.png);   
+}
+
+.clientsName{
+    color: #181818;
+    margin: auto 24px;
+    text-align: left;   
+}
+
+.clientsCard_textField{
+    height: 278px;
+    padding-bottom: 10px;
+}
+
+.clientsCard_text{
+    font-size: 13px;
+    line-height: 22px;
+    color: #959595;
+    text-align: left;
+}
+
+.clientsCard_parameters{
+    width: 294px;
+    height: 54px;
+    background-color: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    display: flex;
+    padding: 11px 14px;
+    margin-left: -20px;      
+}
+
+.clientsCard_parameters__meaning{
+    margin: auto 11px;
+}
+
+.line{
+    border-right: 1px solid #FFFFFF;
+    margin: -11px 18px -11px 0px;   
+}
