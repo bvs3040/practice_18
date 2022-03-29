@@ -85,7 +85,8 @@ body *{
     left: 46.5%;    
 }
 
-.button, .arrow, .project-arrow_menu__item, .button_play, .checkbox-label, .user-name_label:hover{
+.button, .arrow, .project-arrow_menu__item, .button_play, .communicationContacts_label,
+  .checkbox-label, .user-name_label, .feedbackContacts_label, .button_contacts:hover{
     cursor: pointer;
 }
 
@@ -96,6 +97,11 @@ body *{
 .button:active{
     box-shadow: inset 0 0 10px rgba(92, 88, 84, 0.8)
 }
+
+.button_contacts:active{
+    box-shadow: inset 0 0 10px rgba(92, 88, 84, 0.8)
+}
+
 .header-menu{
     display: flex;
     list-style: none;    
@@ -127,8 +133,7 @@ body *{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    
+    background-color: rgba(0, 0, 0, 0.7);    
 }
 
 .home-content{
@@ -175,7 +180,7 @@ h4{
 }
 
 .whiteText{
-    color: #FFFFFF;
+    color: #FFFFFF !important;
 }
 
 
@@ -311,19 +316,13 @@ hr {
     font-size: 13px;
     line-height: 21px;
     color: rgba(54, 54, 54, 0.5);
+    width: 231px;
 }
 
-.user-name_textField{
-    font-size: 14px;
-    line-height: 23px;
+.user-name_textField{  
     color: #363636;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 231px;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);    
 }
-
 
 .checkbox{
     display: none;
@@ -345,11 +344,10 @@ hr {
     opacity: 1;
 }
 
-.first-checkbox_text{
+.checkboxText{
     font-size: 14px;
     line-height: 23px;
     color: #181818;
-    padding-bottom: 50px;
 }
 
 .typesOfRepair_img{
@@ -464,35 +462,30 @@ hr {
 }
 
 .communicationContacts_label{
-    margin: 35px 0 15px 0;
-    font-size: 13px;
-    line-height: 21px;
-    color: rgba(255, 255, 255, 0.5);    
+    margin: 32px 0 15px 0; 
 }
 
 .communicationContacts_textField{
     background-color: #131313;
-    width: 100%;
-    font-size: 14px;
-    line-height: 23px;
-    color:#FFFFFF;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.communicationContacts_textField::placeholder { 
+.inputTextfield_black::placeholder { 
     color:#FFFFFF;
+    font-size: 14px;
+    line-height: 23px;
     opacity: 1; 
 }
 
-.communicationContacts_textField:-ms-input-placeholder { 
+.inputTextfield_black:-ms-input-placeholder { 
     color: #FFFFFF;
+    font-size: 14px;
+    line-height: 23px;
 }
 
-.communicationContacts_textField::-ms-input-placeholder { 
+.inputTextfield_black::-ms-input-placeholder { 
     color: #FFFFFF;
+    font-size: 14px;
+    line-height: 23px;
 }
 
 .communicationContacts_head{
@@ -505,11 +498,6 @@ hr {
 
 .communicationContacts_button{
    align-self: flex-end;
-}
-
-.communicationContacts_checkboxText{
-    font-size: 14px;
-    line-height: 23px;
 }
 
 .communicationContacts-checkbox{
@@ -590,7 +578,11 @@ hr {
 
 .reviews{
     padding-top: 107px;
-    padding-bottom: 200px;
+    padding-bottom: 0px;
+    background: url(/images/image_7.4.png) 0% 100% no-repeat,
+                url(/images/image_7.5.png) 100% 100% no-repeat;
+    max-height: 1108px; 
+    position: relative;    
 }
 
 .clients{
@@ -674,4 +666,107 @@ hr {
 .line{
     border-right: 1px solid #FFFFFF;
     margin: -11px 18px -11px 0px;   
+}
+
+ .feedback{
+     background-color: #181818;
+     max-width: 883px;
+     margin: 161px auto 0px;
+     height: 446px;
+     padding: 32px 190px;
+     z-index: 3;
+     position: relative;
+}
+
+ .feedbackContacts{
+     display: flex;
+     justify-content: space-between;
+     margin: 43px 0;
+ }
+
+ .feedbackContacts_label{   
+    text-align: left; 
+    width: 231px; 
+}
+
+.feedbackQuestion{
+    text-align: left; 
+    margin-bottom: 46px;   
+}
+
+.spanForm{
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);      
+}
+
+.feedbackContacts_textField{
+    background-color: #181818;
+}
+
+.inputTextfield{
+    font-size: 14px;
+    line-height: 23px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+}
+
+.inputTextfield_black{
+    color:#FFFFFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.reviews-overlay{
+    background-color: rgba(255, 255, 255, 0.9);
+    bottom: 504px;
+    position: relative;
+    height: 281px;
+    z-index: 1;
+}
+
+.contacts{
+    background-image: url(/images/image_8.jpg);
+    position: relative;
+    padding-top: 273px;
+}
+
+.contacts-overlay{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+}
+
+.contactsContent{
+  position: relative;
+}
+
+.contacts h3{
+    max-width: 589px;
+    margin: 0 auto;
+}
+
+.button_contacts{
+    background-color: #E3B873;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    border: 0;
+    margin: 20px 5px;
+}
+
+.button_contacts__icon{
+    margin-top: 2px;
+}
+
+.contacts iframe{
+    margin: 24px auto 61px;
+}
+
+.footer{
+    height: 133px;
 }

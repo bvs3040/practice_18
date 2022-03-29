@@ -112,19 +112,19 @@
                 <form class="user-name">
                     <label class="user-name_label">
                         <span>Name</span> <br>
-                        <input class="user-name_textField" type="text" placeholder="What is your name:">
+                        <input class="user-name_textField inputTextfield" type="text" placeholder="What is your name:">
                     </label>               
                     <label class="user-name_label">
                         <span>Phone</span><br>
-                        <input class="user-name_textField" type="text" placeholder="Your phone number:">
+                        <input class="user-name_textField inputTextfield" type="text" placeholder="Your phone number:">
                     </label>
                     <button class="button button-main">Submit</button>
                 </form>
-                <div class="first-checkbox">
+                <div class="">
                     <label class="checkbox-label">
                       <input type="checkbox" class="checkbox" >
                       <span class="fake"></span>
-                      <span class="first-checkbox_text ">I agree to the processing of personal data.</span>
+                      <span class="checkboxText ">I agree to the processing of personal data.</span>
                     </label>
                 </div>                                 
             </div>
@@ -243,22 +243,22 @@
                                       departure of the measurer
                         </p>
                         <label class="communicationContacts_label whiteText">
-                            <span>Name</span> <br>
-                            <input class="communicationContacts_textField" type="text" placeholder="What is your name:">
+                            <span class="spanForm">Name</span> <br>
+                            <input class="communicationContacts_textField inputTextfield inputTextfield_black" type="text" placeholder="What is your name:">
                         </label>               
                         <label class="communicationContacts_label whiteText">
-                            <span>Phone</span><br>
-                            <input class="communicationContacts_textField" type="text" placeholder="Your phone number:">
+                            <span class="spanForm">Phone</span><br>
+                            <input class="communicationContacts_textField inputTextfield inputTextfield_black" type="text" placeholder="Your phone number:">
                         </label>
                         <label class="communicationContacts_label whiteText">
-                            <span>Email</span><br>
-                            <input class="communicationContacts_textField" type="text" placeholder="Your email:">
+                            <span class="spanForm">Email</span><br>
+                            <input class="communicationContacts_textField inputTextfield inputTextfield_black" type="text" placeholder="Your email:">
                         </label>
                         <div class="communicationContacts-checkbox ">
                             <label class="checkbox-label whiteText">
                                 <input type="checkbox" class="checkbox" >
                                 <span class="fake"></span>
-                                <span class="communicationContacts_checkboxText whiteText">I agree to the processing of personal data.</span>
+                                <span class="checkboxText whiteText">I agree to the processing of personal data.</span>
                             </label>
                         </div>     
                         <button class="button button-main communicationContacts_button">Call the measurer</button>
@@ -309,14 +309,14 @@
         </section>
 
         <section class="reviews" id="reviews">
-            <div class="fix-container center">
+            <div class="fix-container center ">        
                 <h3 class="title" style="color: #181818;">our clients</h3>
                 <div class="titleIcon">
                     <img src="/images/icon_handshake.svg" alt="icon handshake">
                 </div>
                 <p class="underTitle">
                     80% of our customers recommend us to their
-                     friends and family.
+                    friends and family.
                 </p>
                 <div class="clients">
                     <div class="clientsCard">
@@ -393,10 +393,73 @@
                                 <img src="/images/icon_calendar.svg">
                                 <h4 class="title whiteText clientsCard_parameters__meaning">86 DAYS</h4> 
                             </div>    
-                    </div>
+                    </div>    
                 </div>
+                <form class="feedback">
+                    <h3 class="title whiteText">
+                        have any questions?
+                    </h3>
+                    <div class="feedbackContacts">
+                        <label class="feedbackContacts_label ">
+                            <span class="spanForm">Name</span> <br>
+                            <input class="feedbackContacts_textField inputTextfield inputTextfield_black" type="text" placeholder="What is your name:">
+                        </label>               
+                        <label class="feedbackContacts_label">
+                            <span class="spanForm">Phone</span><br>
+                            <input class="feedbackContacts_textField inputTextfield inputTextfield_black" type="text" placeholder="Your phone number:">
+                        </label>
+                    </div>
+                    <div class="feedbackQuestion">
+                        <label class="feedbackQuestion_label">
+                            <span class="spanForm">Question</span><br>
+                            <input class="feedbackContacts_textField inputTextfield inputTextfield_black" type="text" placeholder="I want to know:">
+                        </label>
+                    </div>
+                    <div class="communicationContacts-checkbox ">
+                        <label class="checkbox-label whiteText">
+                            <input type="checkbox" class="checkbox" >
+                            <span class="fake"></span>
+                            <span class="checkboxText whiteText">I agree to the processing of personal data.</span>
+                        </label>
+                    </div>     
+                    <button class="button button-main">Submit</button>
+                </form>
             </div>
+            <div class="reviews-overlay"></div>
         </section>
+
+        <section class="contacts">
+            <div class="contacts-overlay"></div>
+            <div class="fix-container center contactsContent">  
+                <h3 class="title">
+                    Rostov-on-Don, Nansen St., 239 Shopping Center
+                     Decorum Tel +7 (928) 768 32 29
+                </h3> 
+                <div class="contactsIconBlock">
+                    <button class="button_contacts"><img src="/images/icon_mail.svg" alt="" class="button_contacts__icon"></button>
+                    <button class="button_contacts" ><img src="/images/icon_insta.svg" alt="button_contacts__icon" ></button>   
+                </div>
+                <iframe src="/images/image_8.2.png" scrolling="no" frameborder="0" width="925" height="465"> </iframe>                                     
+            </div>          
+        </section>
+
+        <footer class=" header">
+            <div class="fix-container header-content footer">
+                <span class="header-logo">IC "Repair Design Project"</span>
+                <nav>
+                    <ul class="header-menu">
+                        <li class="header-menu__item"><a class="header-menu__link" href="#home">HOME</a></li>
+                        <li class="header-menu__item"><a class="header-menu__link" href="#projects">PROJECTS</a></li>
+                        <li class="header-menu__item"><a class="header-menu__link" href="#measurement">MEASUREMENT</a></li>
+                        <li class="header-menu__item"><a class="header-menu__link" href="#team">TEAM</a></li>
+                        <li class="header-menu__item"><a class="header-menu__link" href="#reviews">REVIEWS</a></li>
+                        <li class="header-menu__item"><a class="header-menu__link" href="">CONTACTS</a></li>                    
+                    </ul>
+                </nav>
+                <span class="header-tel">+7 (928) 768-32-39</span>
+                <button class="button button-header-footer">Request a call</button>
+            </div>
+        </footer>
 
         
     </main>
