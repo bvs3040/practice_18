@@ -5,12 +5,18 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
-    
+    max-width: 1440px;
 }
 
 body *{
     box-sizing: border-box;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .fix-container{
+        padding: 0 30px;
+    }
 }
 
 .fix-container{
@@ -39,6 +45,7 @@ body *{
 .header-tel{
     color: #E3B873;
     text-decoration: underline;
+    min-width: 103px;
 }
 
 .button{
@@ -59,6 +66,12 @@ body *{
     font-size: 11px;
     line-height: 15px;
 }
+@media screen and (max-width: 1300px) {
+    .button_request{
+        display: none;
+    }
+}
+
 
 .button-main{
     height: 51px;
@@ -108,9 +121,19 @@ body *{
     justify-content: space-between;
     margin-left: 35px;
 }
+@media screen and (max-width: 1300px) {
+    .header-menu{
+        margin-left:0;
+    }
+}
 
 .header-menu__item{
     margin-right: 53px;
+}
+@media screen and (max-width: 1300px) {
+    .header-menu__item{
+        margin-right: 20px;
+    }
 }
 
 .header-menu__link{
@@ -124,9 +147,14 @@ body *{
 .home{
     background-image: url('/images/image_1.jpg');
     background-size: cover;
-    height: 707px;
-    padding-top: 194px;
+    height: 49vw;
+    padding-top: 12.5vw;
     position: relative;
+}
+@media screen and (max-width: 1300px) {
+    .home{
+        padding-top: 30px;
+    }
 }
 
 .home-overlay{
@@ -272,7 +300,9 @@ h4{
 }
 
 .project-image{
-    max-height: 482px;
+    max-height: 33vw;
+    max-width: 48vw;
+    margin-left: 30px;
 }
 
 .online-control{
@@ -290,6 +320,9 @@ h4{
 
 .video{
     position: relative;
+    max-width: 790px;
+    height: 436px;
+    margin: 0 auto;
 }
     
 hr {
@@ -376,7 +409,7 @@ hr {
 }
 
 .types-Of-Repair__img__item{
-    width: 392px;
+    width: 31%;
     background-repeat: no-repeat;
 }
 
@@ -437,9 +470,14 @@ hr {
     justify-content: start;
     margin: 4px 0px 83px 151px;
 }
+@media screen and (max-width: 1300px) {
+    .communication-text__item{
+        margin: 4px 0px 83px 0px;
+    }
+}
 .communication-text__item__icon{
-    width: 56px;
     height: 56px;
+    min-width: 56px;
     border-radius: 50%;
     background-color: #E3B873;
     box-shadow: 0 5px 15px 0 rgba(227, 184, 115, 0.15);
@@ -541,7 +579,7 @@ hr {
 
 .decoration nav{
     padding-top: 135px;
-    
+    min-width: 210px;    
 }
 
 .decoration nav ul{
@@ -581,6 +619,12 @@ hr {
     max-height: 937px;
 }
 
+@media screen and (max-width: 1300px) {
+    .decoration-images_column2{
+        display: none;
+    }   
+}
+
 .decoration-images img{
     margin-bottom: 33px;    
 }
@@ -615,6 +659,17 @@ hr {
     height: 428px;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
     padding: 26px 33px 0px 20px;
+}
+@media screen and (max-width: 1300px) {
+    .clients-card_transparent{
+        display: none;
+    } 
+    .clients{
+        justify-content: space-around;
+    }
+    .clients-card{
+        margin: 0 15px;
+    }  
 }
 
 .clients-name{
@@ -677,7 +732,7 @@ hr {
     margin: -11px 18px -11px 0px;   
 }
 
- .feedback{
+.feedback{
      background-color: #181818;
      max-width: 883px;
      margin: 161px auto 0px;
@@ -685,6 +740,11 @@ hr {
      padding: 32px 190px;
      z-index: 1;
      position: relative;
+}
+@media screen and (max-width: 1300px) {
+    .feedback{
+        padding: 32px 90px;
+    }    
 }
 
  .feedback-contacts{
@@ -741,6 +801,7 @@ hr {
     background-size: cover;
     position: relative;
     padding-top: 273px;
+    padding-bottom: 6px;
 }
 
 .contacts-overlay{
@@ -774,8 +835,13 @@ hr {
     margin-top: 2px;
 }
 
-.contacts iframe{
+.map{
     margin: 24px auto 61px;
+}
+@media screen and (max-width: 1300px) {
+    .map iframe{
+        width: 688px;
+    }     
 }
 
 .footer{
