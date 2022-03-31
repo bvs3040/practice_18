@@ -5,7 +5,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
-    max-width: 1440px;
 }
 
 body *{
@@ -13,15 +12,14 @@ body *{
     text-decoration: none;
 }
 
+.fix-container{
+    max-width: 1256px;
+    margin: 0 auto;
+}
 @media screen and (max-width: 1300px) {
     .fix-container{
         padding: 0 30px;
     }
-}
-
-.fix-container{
-    max-width: 1256px;
-    margin: 0 auto;
 }
 
 .header{
@@ -95,10 +93,14 @@ body *{
     position: absolute;
     z-index: 1;
     top: 39%;
-    left: 46.5%;    
+    left: 46.5%; 
+    background-image: url(/images/icon_play.svg); 
+    background-repeat: no-repeat; 
+    background-size: auto; 
+    background-position: 35px 29px;
 }
 
-.button, .arrow, .project-arrow_menu__item, .button_play, .communication-contacts__label, .feedback-question_label,
+.button, .project-content__arrow-button, .project-content__arrow-menu__item, .button-play, .communication-contacts__label, .feedback-question_label,
   .checkbox-label, .user-name__label, .feedback-contacts__label, .button-contacts:hover{
     cursor: pointer;
 }
@@ -171,6 +173,15 @@ body *{
     font-size: 22px;
     line-height: 36px;
     color: #FFFFFF;
+}
+
+.home-content p{
+    padding-right: 780px;
+}
+@media screen and (max-width: 1300px) {
+    .home-content p{
+        padding-right: 214px;
+    }
 }
 
 .title{
@@ -251,6 +262,7 @@ h4{
     line-height: 27px;
     margin-top: 20px;
     margin-bottom: 50px;
+    max-width: 438px;
 }
 
 .project-content__parameters{
@@ -290,13 +302,21 @@ h4{
     list-style-image: url("/images/icon_point_white.svg");
 }
 
-.arrow{
-    margin-right: 7px;
-}
-
 .project-content__arrow-button{
     background: none;
     border-style: none;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 43px;
+    background-position: 0px 19px;
+}
+
+.project-content__arrow-button_left{
+    background-image:url(/images/icon_arrow_left.svg);
+}
+
+.project-content__arrow-button_right{
+    background-image:url(/images/icon_arrow_right.svg);
 }
 
 .project-image{
@@ -846,4 +866,8 @@ hr {
 
 .footer{
     height: 133px;
+}
+
+.button-mobile{
+    display: none;
 }
